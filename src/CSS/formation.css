@@ -1,0 +1,61 @@
+.formation-container{
+    flex-basis: 98%;
+    height: 100%;
+    background: var(--main-bg);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.formation{
+    flex-basis: 95%;
+    height: auto;
+    /* padding: 30px; */
+    /* background: lightblue; */
+    margin: 30px 0;
+}
+
+.formation div h3{
+    color: var(--btn-bg);
+}
+
+.formation div div{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 6px;
+}
+.edit-formation-btn{
+    cursor: pointer;
+}
+
+.formation-field-container{
+    margin-top: 30px;
+    width: 100%;
+    background: var(--component-bg);
+    height: 85vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.formation-field-container .formation-field{
+    flex-basis: 65%;
+    height: 493px;
+    /* background: green; */
+}
+
+.formation-field img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.formation-field-container .formation-demo{
+    flex-basis: 28%;
+    height: 493px;
+    background: var(--main-bg);
+    border-radius: 4px;
+}

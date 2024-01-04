@@ -1,0 +1,36 @@
+nav{
+    width: 65px;
+    background: var(--nav-bg);
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav main{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    /* background: green; */
+    display: grid;
+    place-items: center;
+}
+
+nav main .logo{
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+.nav-links{
+    width: 100%;
+    height: 100px;
+    /* background: yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--btn-bg);
+    cursor: pointer;
+}

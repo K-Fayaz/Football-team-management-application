@@ -1,0 +1,233 @@
+.edit-modal-container,.delete-modal-container{
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+    position: absolute;
+    display: grid;
+    place-items: center;
+    z-index: 3;
+}
+
+.edit-modal{
+    width: 450px;
+    height: auto;
+    min-height: 75vh;
+    background: var(--component-bg);
+    box-shadow: 2px 6px 23px 9px rgba(0,0,0,0.28);
+    border-radius: 7px;
+    padding: 15px;
+}
+
+.edit-modal-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.cross-btn{
+    cursor: pointer;
+}
+
+.edit-modal-body{
+    margin-top: 15px;
+}
+
+.field-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.field-one div p{
+    font-size: 13px;
+    margin-bottom: 6px;
+    font-weight: 150;
+}
+
+.field-one div input:focus{
+    outline: none;
+}
+
+.field-name{
+    flex-basis: 55%;
+    /* background-color: red; */
+}
+
+.field-name input{
+    width: 100%;
+    padding: 8px 5px;
+    background: transparent;
+    border: 1px solid rgb(65,65,65);
+    border-radius: 5px;
+    color: white;
+}
+
+.jersey-field{
+    flex-basis: 30%;
+}
+.jersey-field input{
+    padding: 8px 5px;
+    background: transparent;
+    border: 1px solid rgb(65,65,65);
+    border-radius: 5px;
+    color: white;
+}
+
+.field-two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.field-two div{
+    flex-basis: 46%;
+}
+.field-two div p{
+    color: white;
+    font-size: 13px;
+    margin-bottom: 6px;
+    font-weight: 150px;
+}
+.field-two div input{
+    width: 95%;
+    font-size: 16px;
+    padding: 8px 5px;
+    background: transparent;
+    border: 1px solid rgb(65,65,65);
+    border-radius: 5px;
+    color: white
+}
+
+.field-two div input:focus{
+    outline: none;
+}
+
+.field-three,.field-four{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.field-three p,.field-four p{
+    color: white;
+    font-size: 13px;
+    margin-bottom: 6px;
+    font-weight: 150px;
+}
+
+.field-three select,.field-four select{
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgb(65,65,65);
+    padding: 8px 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.field-three select:focus,.field-four select:focus{
+    outline: none;
+}
+
+select option{
+    background-color: var(--component-bg);
+}
+
+.field-five{
+    width: 50%;
+    /* background: red; */
+    margin-top: 15px;
+}
+
+.field-five p{
+    color: white;
+    font-weight: 150px;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.field-five div{
+    display: inline-block;
+}
+
+.field-five div:first-of-type{
+    margin-right: 15px;
+}
+
+.field-five div input[type="radio"]{
+    accent-color: var(--btn-bg);
+    background: transparent;
+}
+.field-five div label{
+    color: white;
+    margin-left: 4px;
+}
+
+.edit-btn-container{
+    width: 100%;
+    /* background: red; */
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.edit-btn-container button{
+    background: var(--btn-bg);
+    border: none;
+    border-radius: 5px;
+    padding:7px 10px;
+    color: white;
+    font-weight: 150px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.edit-btn-container button:hover{
+    background: var(--btn-bg-secondary);
+}
+
+
+/* Delete Modal */
+
+.delete-modal{
+    width: 350px;
+    /* height: 150px; */
+    padding: 20px;
+    background-color: var(--component-bg);
+    border-radius: 7px;
+    box-shadow: 2px 6px 23px 9px rgba(0,0,0,0.28);
+}
+
+.delete-modal .delete-modal-header{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.delete-modal .delete-modal-body p{
+    color: var(--text-head);
+    font-size: 14px;
+}
+
+.delete-modal .delete-modal-body div{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
+.delete-modal-body div button{
+    padding: 13px 25px;
+    background: transparent;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.delete-modal-body div button:first-of-type{
+    margin-right: 10px;
+    border: 1px solid rgb(65,65,65);
+}
+.delete-modal-body div button:last-of-type{
+    background-color: rgb(210,49,49);
+}
